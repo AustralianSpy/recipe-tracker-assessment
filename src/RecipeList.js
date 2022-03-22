@@ -12,7 +12,11 @@ function RecipeList({ recipes, deleteRecipe }) {
       <table>
         <thead>
           <tr>
-            <th></th>
+            <th>Name</th>
+            <th>Cuisine</th>
+            <th>Photo</th>
+            <th>Ingredients</th>
+            <th>Preperation</th>
             <th>Actions</th>
           </tr>
         </thead>

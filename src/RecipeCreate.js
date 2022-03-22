@@ -29,11 +29,15 @@ function RecipeCreate({ createRecipe }) {
   };
   
   return (
-    <form name="create">
+    <form name="create" onSubmit={handleSubmit}>
       <table>
         <tbody>
           <tr>
             <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>            
             <td>
               <button type="submit">Create</button>
             </td>
