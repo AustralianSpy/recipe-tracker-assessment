@@ -14,26 +14,23 @@ function RecipeList({ recipes, deleteRecipe }) {
           <tr>
             <th></th>
             <th>Actions</th>
-            <tbody>
-              {
-                recipes ?
-                  recipes.map((recipe, index) => (
-                    <tr>
-                      <td>
-                        <Recipe
-                          recipe={recipe}
-                          deleteRecipe={() => deleteRecipe(index)}
-                          key={index}
-                        />
-                      </td>
-                    </tr>
-                  )) : null
-              }
-            </tbody>
           </tr>
         </thead>
         <tbody>
-        
+          {
+            recipes ?
+              recipes.map((recipe, index) => (
+                <tr>
+                  <td>
+                    <Recipe
+                      recipe={recipe}
+                      deleteRecipe={() => deleteRecipe(index)}
+                      key={index}
+                    />
+                  </td>
+                </tr>
+              )) : null
+          }
         </tbody>
       </table>
     </div>
