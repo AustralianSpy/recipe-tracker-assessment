@@ -1,6 +1,8 @@
 import React from 'react';
 
 export default function Recipe ({ recipe, deleteRecipe }) {
+    // Displays each individual recipe, handles deletion of recipe from state.
+    
     const { name, cuisine, photo, ingredients, preparation } = recipe;
     return (
         <tr>
