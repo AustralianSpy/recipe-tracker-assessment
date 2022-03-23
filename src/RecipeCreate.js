@@ -33,11 +33,21 @@ function RecipeCreate({ createRecipe }) {
       <table>
         <tbody>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>            
+            <td>
+              <input type="text" name="name" id="name" onChange={handleChange} value={recipe.name} placeholder="Name" />
+            </td>
+            <td>
+              <input type="text" name="cuisine" id="cuisine" onChange={handleChange} value={recipe.cuisine} placeholder="Cuisine" />
+            </td>
+            <td>
+              <input type="url" name="photo" id="photo" onChange={handleChange} value={recipe.photo} placeholder="URL" />
+            </td>
+            <td>
+              <textarea name="ingredients" id="ingredients" cols="30" rows="2" onChange={handleChange} value={recipe.ingredients} placeholder="Ingredients"></textarea>
+            </td>
+            <td>
+              <textarea name="preparation" id="preparation" cols="30" rows="2" onChange={handleChange} value={recipe.preparation} placeholder="Preparation"></textarea>
+            </td>            
             <td>
               <button type="submit">Create</button>
             </td>
